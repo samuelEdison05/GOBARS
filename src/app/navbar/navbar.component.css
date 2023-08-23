@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+.navbar-brand{
+    margin: 20px 0 0 50px;
+    font: 2rem  'Courier New', Courier, monospace;
+}
+.nav-item{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    margin-right: 20px;
+}
+.ad{
+    background-color: black;
+    margin-top: 15px;
+    text-align: center;
+    padding: 3px;
+    color: white;
+}
