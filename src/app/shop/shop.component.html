@@ -1,1 +1,25 @@
-<p>shop works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h5 class="mainHead">Our Products</h5>
+            <p class="mainpara" >Nature's Herbal Chocolate Delight! Indulge in rich, guilt-free flavors crafted from the finest herbs for a truly exquisite chocolate experience."</p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid product_container">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-xs-12"  *ngFor="let image of imagesList; let i=index">
+      <img class="img-fluid product_image" src="assets/GO BAR IMGES/{{ image.image}}" alt="dynamic images">
+      <p class="product_name">{{image.name}}</p>
+      <p class="price">Price $ {{image.price}}</p>
+      <div class="qtyaddbtn">
+        <button class="btn btnMinus" (click)="minusQty(i)">-</button>{{image.qty}}<button class="btnAdd btn" (click)="addQty(i)">+</button>
+      </div>
+      <div class="addToCard">
+        <button class="btn" (click)="addToCart(image.qty,image.price)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+</div>
